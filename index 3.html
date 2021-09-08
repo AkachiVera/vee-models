@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Untitled</title>
+
+
+  <h1 style="color: black; text-align: left;">REGISTRATION FORM</h1>
+</head>
+
+<body>
+  <form id="userform" style="text-align: down; padding: 10px; background-color: brown; width: 100px;">
+  <label for="First Name">First Name</label>
+  <input type="text" id="First Name" placeholder="Name" v-model="First Name" />
+
+  <label for="Last Name"> Last Name</label>
+  <input type="Last Name" placeholder="Last Name" v-model="Last Name"/>
+
+  <label v-for="Gender">Gender</label>
+  <select>
+      <option>Female</option>
+      <option>Male</option>
+
+  </select>
+  <input type="Gender" autofocus="Gender" v-model="Gender"/>
+
+  <label for="#">Password</label>
+  <input type="Password" placeholder="*******" v-model="password" />
+
+  <label for="#">Confirm Password</label>
+  <input type="Confirm Passsword" placeholder="*******" v-model="Confirm Password"/>
+
+  <label for="#">Height</label>
+  <input type="Height" placeholder="eg 5'10" v-model="Height" />
+
+  <label for="#">Eye Color</label>
+  <input type="Eye color" placeholder=" eg Black" v-model="Eye Color" />
+
+  <label for="#">Email</label>
+  <input type="Email" placeholder="Example@gmail.com" v-model.lazy="Email"/>
+
+  <label for="#">Phone Number</label>
+  <input type="Phone Number" v-model="Phone Number"/>
+
+  <label for="Are you a Registered Model in another agency">Are you a Registered Model in another agency</label></label>
+  <input type="checkbox">Yes</input>
+  <input type="checkbox">No</input>
+
+  <button v-on:click="checkform">Submit</button>
+</body>
+<script>
+    vue.createapp ({
+     data () {  
+  return {
+  Gender: 
+       [
+    {text: 'Female'},
+    {text: 'Male'},
+  ]   
+  } 
+   }  
+    })
+    </script>
+ <script>
+ vue.createapp({
+     data: {
+     return: {
+     checkform: []
+     }
+    }
+     })
+ </script>
+</html>

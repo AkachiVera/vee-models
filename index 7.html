@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Transition</title>
+    <h1>Transition</h1>
+    <h2>CSS Animation</h2>
+</head>
+
+<body>
+    <div id="Animation">
+        <button onclick="show">Click</button>
+        <transition="Bounce">
+            <h4 v-if="show"> Hi, always update your profile for more bookings. Enjoy!</transition>
+    </div>
+</body>
+
+<style>
+    .bounce-enter-active {
+        animation: .6s;
+    }
+
+    .bounce-leave-active {
+        animation:  .6s;
+    }
+</style>
+
+<script>
+    new Vue({
+        el: "Animation",
+        data: {
+            show: true
+        }
+    })
+</script>
+
+
+</html>

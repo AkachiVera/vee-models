@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week 7!</title>
+        <h2>Week 7 Props</h2>
+    </head>
+    <body>
+    <style>
+     .demo {
+      margin-bottom: 30px;
+      font-family: sans-serif;
+      margin-top: 1em; 
+      border: 2px solid #7D0606;
+      padding: 30px;
+      border-radius: 2px; 
+      }
+    </style>
+    <ol>
+     <div id="tips-post" class="demo">
+         <li>
+     <tips-post title="Catwalk Tips">Catwalk Tips</tips-post>
+         </li>
+         <li>
+     <tips-post title="How to Pose">How to Pose</tips-post>
+     </li>
+     <li>
+     <tips-post title="How to prepare for Agencies">How to prepare for Agencies</tips-post>
+     </li>
+     </ol>
+     </div>
+     <script>
+         Vue.component ({})
+         demo.component('tips-post',{
+             props: ['tips'],
+             template: '<h3> Modeling Tips</h3>'
+         }
+         )
+     </script>
+    </body>
+</html>
